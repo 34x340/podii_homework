@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <button class="button" data-action="open-modal" type="button">
+        Відкрити модалку
+    </button>
+    <div class="backdrop js-backdrop">
+        <div class="modal">
+            <h2>модалка</h2>
+            <p>
+                ляляля бебебе омномном
+            <button class="button" data-action="close-modal" type="button">
+                Закрити
+            </button>
+        </div>
+    </div>
+
+    <form>
+        <p>Колір</p>
+        <label>
+            <input type="radio" name="color" value="red" checked>
+            червоні
+        </label>
+        <label>
+            <input type="radio" name="color" value="white">
+            Белі
+        </label>
+        <label>
+            <input type="radio" name="color" value="green">
+            Зілібоба
+        </label>
+    </form>
+
+    <input type="text" placeholder="Ваше ім'я?" id="name-input">
+    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+    <input 
+        type="text" 
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символів"/>
+
+    <input type="range" id="font-size-control">
+    <br>
+    <span id="text">крута</span>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
